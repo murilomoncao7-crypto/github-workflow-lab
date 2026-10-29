@@ -4,7 +4,7 @@ Um pull request (PR) propõe integrar alterações de uma branch em outra. Este 
 
 ## 1. Prepare uma cópia isolada
 
-Você precisa de Git instalado e acesso de escrita a este laboratório para publicar a branch. Autentique-se pelo método habitual do GitHub; nunca coloque tokens nos comandos ou nos arquivos.
+Confira primeiro os requisitos de Git, Python e terminal no [fluxo de contribuição](../CONTRIBUTING.md). Publicar a branch exige acesso de escrita a este laboratório. Autentique-se pelo método habitual do GitHub; nunca coloque tokens nos comandos ou nos arquivos.
 
 No terminal, entre em uma pasta destinada aos seus exercícios. Clone o endereço exibido no botão **Code** deste repositório para uma pasta nova. Por exemplo, no repositório original deste laboratório:
 
@@ -44,6 +44,10 @@ Leia todas as linhas adicionadas e removidas. Confira ortografia, comandos e lin
 
 ## 4. Prepare e registre o commit
 
+Antes de criar o commit, siga a seção **Prepare a identidade antes do commit** do [fluxo de contribuição](../CONTRIBUTING.md), configurando e conferindo a identidade efetiva de autor e committer com seu noreply confirmado. Faça isso mesmo quando o Git já estiver configurado e não solicitar identidade: um commit bem-sucedido não prova que o endereço está correto.
+
+Execute os [testes e o verificador de documentação](verificacao-documentacao.md) e corrija qualquer falha antes de preparar os arquivos. Esses comandos complementam a revisão manual do conteúdo e do diff.
+
 ```sh
 git add docs/primeiro-pull-request.md
 git diff --cached --check
@@ -52,9 +56,11 @@ git commit -m "docs: esclarece etapa do primeiro pull request"
 git status
 ```
 
-O `git add` prepara apenas o arquivo indicado; o commit registra essa versão. Use uma mensagem que descreva a melhoria concreta. Se Git solicitar identidade, configure-a apenas neste clone, com `git config --local`, usando seu nome de exibição e o endereço no-reply indicado nas suas configurações de e-mail do GitHub. Não altere configurações globais para este exercício.
+O `git add` prepara apenas o arquivo indicado; o commit registra essa versão. Use uma mensagem que descreva a melhoria concreta. A configuração de identidade deve ter sido feita somente neste clone, sem alterar configurações globais.
 
 ## 5. Publique a branch e abra o PR
+
+Antes do push, execute a conferência de **todos os commits novos** descrita em **Confira todos os commits novos antes do push**, no [fluxo de contribuição](../CONTRIBUTING.md). Ela verifica autor e committer sem imprimir um endereço inesperado. Se houver divergência, pare antes de publicar; não use reescrita de histórico remoto como correção automática.
 
 ```sh
 git push -u origin docs/melhora-guia
@@ -74,11 +80,13 @@ Abra um único PR para a melhoria. Não é necessário criar uma issue para este
 
 Em **Files changed**, leia o diff completo e confira se somente os arquivos esperados foram alterados. Use a visualização renderizada ou abra o Markdown da branch para conferir títulos, listas, blocos de código e links relativos.
 
-Volte à conversa do PR e confira conflitos, verificações e requisitos de revisão. Se encontrar um problema, corrija na mesma branch, faça outro commit e publique: o PR será atualizado. Revise novamente a versão final.
+Volte à conversa do PR e confira conflitos, verificações e requisitos de revisão. Confirme que **Documentacao / verificar** terminou com sucesso na versão atual, seguindo o [guia de verificação](verificacao-documentacao.md); um check ausente ou pendente não equivale a sucesso. Se encontrar um problema, corrija na mesma branch, repita a validação, faça outro commit quando necessário e confira os metadados de todos os commits novos antes de publicar: o PR será atualizado. Revise novamente a versão final.
 
 ## 7. Faça o merge e confirme
 
-Quando o conteúdo estiver correto e os requisitos forem atendidos, escolha **Merge pull request → Confirm merge**, se esse método estiver disponível. Não ignore verificações nem altere proteções para conseguir integrar.
+Antes de integrar, confirme que o método de merge preserva seu noreply em autor e committer, conforme o [guia de privacidade](powershell-e-privacidade.md). A configuração local não controla o site ou um conector. Se não puder confirmar os metadados, pare antes do merge e prepare um método verificável que respeite as regras existentes.
+
+Quando o conteúdo estiver correto, os requisitos forem atendidos e a identidade do merge estiver confirmada, escolha **Merge pull request → Confirm merge**, se esse método estiver disponível e atender a essas condições. Não ignore verificações nem altere proteções para conseguir integrar.
 
 Confirme que o PR exibe **Merged**. Apenas fechar um PR sem merge não integra suas alterações.
 
@@ -96,11 +104,14 @@ Confira se a melhoria aparece na `main`. Se o Git bloquear uma troca de branch o
 ## Checklist de conclusão
 
 - [ ] Branch criada a partir da principal atualizada.
+- [ ] Identidade efetiva configurada antes do commit e autor e committer de todos os commits novos conferidos antes do push.
 - [ ] Melhoria útil, com mensagem de commit clara.
 - [ ] Diff preparado revisado antes do commit.
+- [ ] Testes e verificador passaram localmente; workflow da versão atual do PR aprovado.
 - [ ] Base e branch de origem do PR conferidas.
 - [ ] Diff final, Markdown e links conferidos no GitHub.
 - [ ] Requisitos de merge respeitados.
+- [ ] Método de merge conferido para preservar o noreply nos dois campos.
 - [ ] Estado **Merged** e conteúdo na branch principal confirmados.
 
 ## Aprendizado e Achievements
