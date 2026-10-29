@@ -125,6 +125,8 @@ Compare o SHA remoto com o local. Abra o PR para `main` pelo GitHub, conforme o 
 
 Em **Files changed**, revise o diff completo da versão publicada e os links na renderização Markdown. Na conversa do PR e em **Checks**, abra a execução de **Documentacao / verificar** e confirme sucesso na versão atual. O workflow também roda em pushes para `main` e `ci/verificacao-documentacao`; não espere uma execução de push em toda branch de documentação. Checks ausentes, pendentes ou com falha não equivalem a aprovação. Corrija na mesma branch e aguarde a nova execução.
 
+Se uma execução falhar, siga o [guia de diagnóstico de CI](docs/diagnostico-ci.md) para localizar a causa nos logs e reproduzi-la em uma fixture isolada.
+
 ## Integre e confirme o resultado
 
 Confira conflitos, regras atuais e eventuais revisões exigidas. Não desative proteções nem trate recomendações deste guia como regras já instaladas. Antes de integrar, confirme que o método escolhido preserva o noreply em **autor e committer**, inclusive no commit de merge. Configuração local não controla site ou conector. Se essa garantia não estiver disponível, pare antes de integrar e prepare um método verificável, conforme o [guia de privacidade](docs/powershell-e-privacidade.md).
