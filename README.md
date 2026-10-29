@@ -16,6 +16,8 @@ Pratique a [resolução e o abandono de conflitos de merge](docs/conflitos-de-me
 
 Aprenda a [desfazer alterações com segurança](docs/desfazer-com-seguranca.md), distinguindo arquivo de trabalho, preparação e histórico em exercícios locais isolados.
 
+Entenda [.gitignore e arquivos já rastreados](docs/gitignore-pratico.md) com regras, exceções e um exercício temporário que preserva a cópia local.
+
 ## Princípios
 
 - Faça uma alteração com propósito e escopo claro.
