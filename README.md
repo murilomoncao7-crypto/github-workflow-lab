@@ -4,6 +4,10 @@ Laboratório educativo em português para iniciantes praticarem branches, commit
 
 Este repositório é independente de outros projetos. O objetivo é aprender um fluxo de colaboração com melhorias pequenas, úteis e revisadas.
 
+## Comece por aqui
+
+Leia o [tutorial do primeiro pull request](docs/primeiro-pull-request.md) para praticar o fluxo completo, da branch ao merge.
+
 ## Princípios
 
 - Faça uma alteração com propósito e escopo claro.
