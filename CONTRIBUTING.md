@@ -35,6 +35,8 @@ Execute um comando por vez e pare se houver erro. O remoto deste laboratório de
 
 Leia o README e os guias antes de editar. Reúna mudanças que resolvem o mesmo problema em um único PR, em vez de separar uma tarefa coesa para gerar atividade. Os exercícios de [conflitos](docs/conflitos-de-merge.md), [desfazer alterações](docs/desfazer-com-seguranca.md) e [.gitignore](docs/gitignore-pratico.md) pertencem a repositórios temporários sem remoto; não reproduza seus comandos de descarte ou remoção de rastreamento nos arquivos do laboratório.
 
+Para entender fetch, upstream e uma recusa de avanço direto, pratique a [sincronização segura de branches](docs/sincronizacao-segura.md) com um remoto e dois clones exclusivamente locais.
+
 ## Prepare a identidade antes do commit
 
 Consulte seu próprio noreply em [Settings / Emails](https://github.com/settings/emails). Configure somente este clone, sem copiar a identidade de outro participante:
