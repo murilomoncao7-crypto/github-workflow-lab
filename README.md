@@ -8,6 +8,8 @@ Este repositório é independente de outros projetos. O objetivo é aprender um 
 
 Leia o [tutorial do primeiro pull request](docs/primeiro-pull-request.md) para praticar o fluxo completo, da branch ao merge.
 
+Consulte também as [lições sobre Windows PowerShell e privacidade dos commits](docs/powershell-e-privacidade.md), com diagnóstico de problemas reais encontrados neste laboratório.
+
 ## Princípios
 
 - Faça uma alteração com propósito e escopo claro.
