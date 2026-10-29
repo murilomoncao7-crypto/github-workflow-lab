@@ -12,6 +12,8 @@ Consulte também as [lições sobre Windows PowerShell e privacidade dos commits
 
 Antes de publicar documentação, execute a [verificação local e automática](docs/verificacao-documentacao.md) de links e blocos de código.
 
+Pratique a [resolução e o abandono de conflitos de merge](docs/conflitos-de-merge.md) em um repositório temporário, sem publicar o exercício.
+
 ## Princípios
 
 - Faça uma alteração com propósito e escopo claro.
