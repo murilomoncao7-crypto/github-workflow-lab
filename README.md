@@ -18,6 +18,8 @@ Aprenda a [desfazer alterações com segurança](docs/desfazer-com-seguranca.md)
 
 Entenda [.gitignore e arquivos já rastreados](docs/gitignore-pratico.md) com regras, exceções e um exercício temporário que preserva a cópia local.
 
+Para propor uma melhoria, siga o [fluxo de contribuição](CONTRIBUTING.md), com preparação, validação e confirmação da publicação.
+
 ## Princípios
 
 - Faça uma alteração com propósito e escopo claro.
