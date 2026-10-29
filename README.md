@@ -14,6 +14,8 @@ Antes de publicar documentação, execute a [verificação local e automática](
 
 Pratique a [resolução e o abandono de conflitos de merge](docs/conflitos-de-merge.md) em um repositório temporário, sem publicar o exercício.
 
+Aprenda a [desfazer alterações com segurança](docs/desfazer-com-seguranca.md), distinguindo arquivo de trabalho, preparação e histórico em exercícios locais isolados.
+
 ## Princípios
 
 - Faça uma alteração com propósito e escopo claro.
