@@ -1,0 +1,30 @@
+name: Documentacao
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, ci/verificacao-documentacao]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    name: Documentacao / verificar
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Obter este repositorio
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Preparar Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: '3.13'
+      - name: Testar o verificador
+        run: python -B -m unittest discover -s tests -v
+      - name: Conferir a documentacao
+        run: python -B scripts/check_docs.py

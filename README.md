@@ -10,6 +10,8 @@ Leia o [tutorial do primeiro pull request](docs/primeiro-pull-request.md) para p
 
 Consulte também as [lições sobre Windows PowerShell e privacidade dos commits](docs/powershell-e-privacidade.md), com diagnóstico de problemas reais encontrados neste laboratório.
 
+Antes de publicar documentação, execute a [verificação local e automática](docs/verificacao-documentacao.md) de links e blocos de código.
+
 ## Princípios
 
 - Faça uma alteração com propósito e escopo claro.
