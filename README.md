@@ -6,7 +6,7 @@ Este repositório é independente de outros projetos. O objetivo é aprender um 
 
 ## Comece por aqui
 
-Leia o [tutorial do primeiro pull request](docs/primeiro-pull-request.md) para praticar o fluxo completo, da branch ao merge.
+Comece pelo [fluxo de contribuição](CONTRIBUTING.md), que apresenta os requisitos, a identidade dos commits e as verificações antes da publicação. Depois, siga o [tutorial do primeiro pull request](docs/primeiro-pull-request.md) para praticar o fluxo da branch ao merge.
 
 Consulte também as [lições sobre Windows PowerShell e privacidade dos commits](docs/powershell-e-privacidade.md), com diagnóstico de problemas reais encontrados neste laboratório.
 
@@ -17,8 +17,6 @@ Pratique a [resolução e o abandono de conflitos de merge](docs/conflitos-de-me
 Aprenda a [desfazer alterações com segurança](docs/desfazer-com-seguranca.md), distinguindo arquivo de trabalho, preparação e histórico em exercícios locais isolados.
 
 Entenda [.gitignore e arquivos já rastreados](docs/gitignore-pratico.md) com regras, exceções e um exercício temporário que preserva a cópia local.
-
-Para propor uma melhoria, siga o [fluxo de contribuição](CONTRIBUTING.md), com preparação, validação e confirmação da publicação.
 
 ## Princípios
 
