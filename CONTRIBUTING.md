@@ -37,6 +37,8 @@ Leia o README e os guias antes de editar. Reúna mudanças que resolvem o mesmo 
 
 Para entender fetch, upstream e uma recusa de avanço direto, pratique a [sincronização segura de branches](docs/sincronizacao-segura.md) com um remoto e dois clones exclusivamente locais.
 
+Se precisar alternar de tarefa com alterações pendentes, consulte [como guardar e recuperar trabalho com stash](docs/stash-seguro.md); pratique somente no repositório temporário indicado.
+
 ## Prepare a identidade antes do commit
 
 Consulte seu próprio noreply em [Settings / Emails](https://github.com/settings/emails). Configure somente este clone, sem copiar a identidade de outro participante:
