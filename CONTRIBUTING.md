@@ -63,6 +63,8 @@ foreach ($campo in @('GIT_AUTHOR_IDENT','GIT_COMMITTER_IDENT')) {
 
 A conferência de formato não prova a titularidade do endereço. `git var` verifica a identidade efetiva, inclusive substituições por variáveis de ambiente; o valor é capturado, sem imprimir um endereço inesperado. Veja os detalhes em [PowerShell e privacidade](docs/powershell-e-privacidade.md). Não desative hooks, assinatura exigida ou políticas de execução para continuar.
 
+Para compreender uma alteração existente antes de propor outra, siga o [guia de investigação do histórico](docs/investigar-historico.md), que combina log, show, diff e blame.
+
 ## Valide e revise o que entrará no commit
 
 Na raiz do clone, execute exatamente os comandos do [workflow Documentacao](.github/workflows/documentacao.yml):
